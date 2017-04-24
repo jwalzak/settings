@@ -1,0 +1,62 @@
+"Don't try to be vi compatible
+set nocompatible
+
+" Helps force plugins to load correctly
+filetype off
+
+" Turn on syntax highlighting
+syntax on
+
+" Security
+set modelines=0
+
+"Show line numbers
+set number
+
+" Show files stats
+set ruler
+
+"Blinek cursor on error instead of beeping
+set visualbell
+
+" set encoding=utf-8
+set encoding=utf-8
+
+"Whitespace
+set wrap
+set textwidth=79
+set tabstop=4
+set formatoptions=tcqrn1
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set noshiftround
+
+"Status bar
+set laststatus=2
+
+"last line
+set showmode
+set showcmd
+
+"color
+colorscheme torte
+
+"Remove GUI stuff for pure torture
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
+"Set font
+if has("gui_running")
+
+if has("gui_gtk2")
+  set guifont=Monaco\ 12
+elseif has("gui_macvim")
+  set guifont=Menlo\ Regular:h14
+elseif has("gui_win32")
+  set guifont=Monaco:h12:cANSI
+endif
+endif
+
