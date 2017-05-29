@@ -1,2 +1,10 @@
 # settings
-A small collection of settings for text editors or things like that.
+##Settings for VIM and sublime text 3.
+###VIM file 
+  _gvimrc
+###Sublime files are:
+  Preferences-Sublime-settings
+  keybinding
+  
+  ###Monaco font can be found:
+    https://github.com/todylu/monaco.ttf
